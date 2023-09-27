@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <nav>
+            <a href="index.html" class="logo">Web Profile</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contactme">Hubugi Saya</a></li>
+                <li>
+                    <a onclick="toggleMode()">
+                        Mode
+                        <i id="mode" class="fa fa-toggle-off"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="home">
+        <div class="home">
+            <p>Halo</p>
+            <p>Saya Kukuh Imanura Bagaskara</p>
+            <p>Mahasiswa Studi Independen di Infinite Learning</p>
+            <br>
+            <p>Web developer pemula dengan passion untuk mendapatkan uang</p>
+            <p>Suka dengan tantangan dan hal baru serta ingin terus belajar</p>
+            <br>
+            <p><b>Mari jelajahi lebih lanjut tentang saya!</b></p>
+        </div>
+        <div class="gambar">
+            <img class="picture" src="assets/me3.png" alt="Gambar" id="gambar" onclick="gantiGambar()">
+            <p>Click Me</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about">
+            <div class="about-desc">
+                <p>About</p>
+                <p>Saat ini, saya sedang menjalani perjalanan belajar yang menarik untuk menjadi seorang web developer
+                    yang handal. Dengan tekad yang kuat, saya telah memulai langkah-langkah saya dalam memahami dunia
+                    coding dan desain web.</p>
+            </div>
+
+            <div class="row">
+                <div class="column" style="background-color: lightskyblue;">
+                    <h2>Keahlian Front-end</h2>
+                    <p><b>HTML & CSS</b> : Saya telah memahami dasar HTML dan CSS untuk membangun struktur dan tampilan
+                        dasar sebuah situs web.</p>
+                    <p><b>JavaScript</b> : Saat ini, saya sedang mempelajari JavaScript untuk membuat situs web lebih
+                        interaktif dan dinamis.</p>
+                </div>
+
+                <div class="column" style="background-color: lightblue;">
+                    <h2>Keahlian Back-end</h2>
+                    <p><b>Pemahaman Dasar</b> : Saya memiliki pemahaman dasar tentang bahasa pemrograman seperti PHP dan
+                        Pyton yang membantu saya memahami logika dan fungsi di balik situs web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="skill">
+            <div class="skill-desc">
+                <p>Skill</p>
+                <p>Saya telah mengembangkan beberapa keterampilan yang penting dalam dunia pengembangan web, seperti :
+                </p>
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <span>1</span>
+                    <p>Front-end Development</p>
+                    <p>Mampu membuat tampilan web yang menarik dengan HTML, CSS, dan JavaScript.</p>
+                </div>
+
+                <div class="box">
+                    <span>2</span>
+                    <p>Back-end Development</p>
+                    <p>Memiliki pemahaman awal tentang pemrograman server-side dan basis data.</p>
+                </div>
+
+                <div class="box">
+                    <span>3</span>
+                    <p>Version Control (Git)</p>
+                    <p>Menggunakan Git untuk mengelola proyek dan kolaborasi dengan tim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactme">
+        <div class="contact">
+            <div class="contact-desc">
+                <p>Hubungi Saya</p>
+                <p>Jika Anda ingin tertarik dengan saya atau ingin berdiskusi lebih lanjut tentang proyek bersama,
+                    silakan hubungi saya melalui form dibawah</p>
+            </div>
+
+
+            <form action="form.html">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama" placeholder="Nama Lengkap">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact</p>
+        <p>Terima kasih telah mengunjungi profil saya! Saya selalu terbuka untuk berkolaborasi dan menjalani petualangan
+            pengembangan web bersama Anda. Mari kita bangun web yang luar biasa bersama-sama!</p>
+        <div class="social-icon">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    const toggleMode = () => {
+        let icon = document.getElementById("mode");
+        icon.classList.toggle("fa-toggle-on")
+        icon.classList.toggle("fa-toggle-off")
+
+        let body = document.body;
+        body.classList.toggle("dark-mode")
+    }
+
+    function gantiGambar() {
+        let gambar = document.getElementById("gambar");
+
+        if (gambar.src.endsWith("assets/me3.png")) {
+            gambar.src = "assets/hp_boy.ico";
+        } else if (gambar.src.endsWith("assets/hp_boy.ico")) {
+            gambar.src = "assets/hp_cat.ico";
+        } else {
+            gambar.src = "assets/me3.png";
+        }
+    }
+</script>
+<script src="https://kit.fontawesome.com/8b8bf68d1f.js" crossorigin="anonymous"></script>
+
+</html>

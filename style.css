@@ -1,0 +1,413 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    margin: 35px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#mode {
+    font-size: 20px;
+    bottom: 0;
+    position: absolute;
+    transform: translate(50%, -95%);
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Home */
+
+#home {
+    width: 100%;
+    height: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    margin: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home p {
+    margin: 0px;
+}
+
+.home p:nth-child(1) {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home p:nth-child(2) {
+    font-weight: bolder;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.home p:nth-child(3) {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.gambar {
+    width: 300px;
+    text-align: center;
+}
+
+.gambar p {
+    color: white;
+    margin: 0px 0px 0px;
+}
+
+.picture {
+    width: auto;
+    height: 300px;
+}
+ 
+/* About */
+
+.about {
+    background-color: lightgray;
+    padding: 10%;
+}
+
+.about-desc {
+    padding: 0px 50px;
+}
+
+.about-desc p:nth-child(1) {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+.about-desc p:nth-child(2) {
+    color: black;
+    text-align: center;
+}
+
+.row {
+    margin: 50px 50px 0px;
+    display: flex;
+}
+
+.row .column h2 {
+    text-align: center;
+}
+
+.row .column p {
+    text-align: justify;
+    width: 75%;
+}
+
+.column {
+    flex: 50%;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Skill */
+
+.skill {
+    padding: 10%;
+}
+
+.skill-desc {
+    padding: 0px 50px;
+}
+
+.skill-desc p:nth-child(1) {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+.skill-desc p:nth-child(2) {
+    color: black;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    text-align: justify;
+    justify-content: space-around;
+}
+
+.box {
+    width: 350px;
+    box-shadow: 2px 12px 18px rgba(0, 0, 0, 0.2);
+    margin: 0px 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.box span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightblue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.box p:nth-child(2) {
+    font-weight: bold;
+}
+
+.box p:nth-child(3) {
+    color: gray;
+}
+
+/* Contact */
+
+.contact {
+    padding: 10%;
+    background-color: lightgray;
+}
+
+.contact-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact-desc p:nth-child(1) {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+.contact-desc p:nth-child(2) {
+    color: black;
+    text-align: center;
+    width: 70%;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 5px 0px 15px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: lightblue;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px auto;
+    display: block;
+}
+
+input[type=submit]:hover {
+    background-color: lightskyblue;
+}
+
+input[type=submit]:active {
+    transform: scale(1.1);
+}
+
+/* Footer */
+
+footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    padding: 50px 0px 0px;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 20px;
+    color: white;
+}
+
+footer p:nth-child(2) {
+    line-height: 20px;
+    margin: 0px 100px;
+    text-align: center;
+    color: white;
+}
+
+.social-icon {
+    margin: 30px 0px;
+    display: flex;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.social-icon a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+.social-icon i {
+    font-size: 35px;
+}
+
+                                                                                            /* Dark Mode */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode a:hover {
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: lightblue;
+}
+
+.dark-mode nav ul li a {
+    color: black;
+}
+
+.dark-mode .logo {
+    color: black;
+}
+
+/* Home */
+
+.dark-mode .home p:nth-child(1) {
+    color: white;
+}
+
+.dark-mode .home p:nth-child(2) {
+    color: white;
+}
+
+.dark-mode .home p:nth-child(3) {
+    color: white;
+}
+
+/* About */
+
+.dark-mode .about {
+    background-color: black;
+}
+
+.dark-mode .about-desc p:nth-child(1) {
+    color: white;
+}
+
+.dark-mode .about-desc p:nth-child(2) {
+    color: white;
+}
+
+/* Skill */
+
+.dark-mode .skill-desc p:nth-child(2) {
+    color: white;
+}
+
+.dark-mode .box span {
+    color: black;
+}
+
+/* Contact */
+
+.dark-mode .contact {
+    background-color: black;
+}
+
+.dark-mode .contact-desc p:nth-child(2) {
+    color: white;
+}
+
+/* Footer */
+
+.dark-mode footer {
+    background-color: lightblue;
+}
+
+.dark-mode footer p:nth-child(1) {
+    color: black;
+}
+
+.dark-mode footer p:nth-child(2) {
+    color: black;
+}
